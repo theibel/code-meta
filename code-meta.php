@@ -13,5 +13,6 @@
  */
 
 //insert code here
+use CodeMilitant\CodeMeta\Test;
 require_once('/usr/share/nginx/html/wp-content/plugins/code-meta/includes/autoloader.php');
-//$test = new CodeMilitant\CodeMeta\Test\MyTest();
+$test = new CodeMilitant\CodeMeta\Test\MyTest();

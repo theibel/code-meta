@@ -10,12 +10,10 @@ function __autoloader($class) {
 
 	$class = str_replace($namespace, '', $class);
 	$class = str_replace('\\', DIRECTORY_SEPARATOR, $class) . '.php';
-echo "this is class: " . var_dump($class);
 
-	$directory = plugin_dir_path( __DIR__ );
-echo "this is directory: " . var_dump($directory);
+	$directory = "/usr/share/nginx/html/wp-content/plugins/code-meta/includes";
 
-	$path = $directory . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR . $class;
+	$path = $directory . DIRECTORY_SEPARATOR . 'src' . $class;
 
 	if (file_exists($path)) {
 		require_once($path);
