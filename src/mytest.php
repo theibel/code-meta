@@ -1,5 +1,5 @@
 <?php
-namespace CodeMilitant\CodeMeta\Test;
+namespace CodeMilitant\CodeMeta\Src;
 
 class MyTest {
 	public function __construct() {

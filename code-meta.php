@@ -7,12 +7,10 @@
  * Author URI:      https://codemilitant.com
  * Text Domain:     code-meta
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         1.8.0
  *
  * @package         Code_Meta
  */
 
-//insert code here
-use CodeMilitant\CodeMeta\Test;
-require_once('/usr/share/nginx/html/wp-content/plugins/code-meta/includes/autoloader.php');
-$test = new CodeMilitant\CodeMeta\Test\MyTest();
+require('/usr/share/nginx/html/wp-content/plugins/code-meta/includes/autoloader.php');
+$test = new CodeMilitant\CodeMeta\Src\MyTest();

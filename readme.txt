@@ -1,66 +1,61 @@
 === CodeMilitant Meta Tag Generator ===
-Contributors: (this should be a list of wordpress.org userid's)
-Donate link: https://example.com/
-Tags: comments, spam
+Contributors: codemilitant
+Tags: meta tags, opengraph, seo, search engine rankings
 Requires at least: 4.5
 Tested up to: 6.1.1
-Requires PHP: 5.6
+Requires PHP: 7.0+
 Stable tag: 0.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
+CodeMilitant OpenGraph Meta Tag Generator is a 'set it and forget it' meta tag generator for WordPress websites. HTML meta tags are required for top search engine rankings.
 
 == Description ==
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
+CodeMilitant OpenGraph Meta Tag Generator
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+The goal of code should be to work for us, with little to no intervention from the user. This simple philosophy is the way code/computers are supposed to work.
 
-A few notes about the sections above:
+This plugin exists because of the failings of all the rest.
 
-*   "Contributors" is a comma separated list of wp.org/wp-plugins.org usernames
-*   "Tags" is a comma separated list of tags that apply to the plugin
-*   "Requires at least" is the lowest version that the plugin will work on
-*   "Tested up to" is the highest version that you've *successfully used to test the plugin*. Note that it might work on
-higher versions... this is just the highest one you've verified.
-*   Stable tag should indicate the Subversion "tag" of the latest stable version, or "trunk," if you use `/trunk/` for
-stable.
-
-    Note that the `readme.txt` of the stable tag is the one that is considered the defining one for the plugin, so
-if the `/trunk/readme.txt` file says that the stable tag is `4.3`, then it is `/tags/4.3/readme.txt` that'll be used
-for displaying information about the plugin.  In this situation, the only thing considered from the trunk `readme.txt`
-is the stable tag pointer.  Thus, if you develop in trunk, you can update the trunk `readme.txt` to reflect changes in
-your in-development version, without having that information incorrectly disclosed about the current stable version
-that lacks those changes -- as long as the trunk's `readme.txt` points to the correct stable tag.
-
-    If no stable tag is provided, it is assumed that trunk is stable, but you should specify "trunk" if that's where
-you put the stable version, in order to eliminate any doubt.
+The CodeMilitant OpenGraph Meta Tag Generator provides 100% of all OpenGraph tags available to put your site on the first page of any search engine.
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
+To provide thorough search engine compliance for maximum search engine rankings, just:
 
-e.g.
+1. From the 'Plugins' menu select 'Add New' or select the 'Add New' button at the top of the plugin list page.
+2. Search for 'code-meta' plugin in the search field.
+3. Look for the CodeMilitant shield logo and select the 'Install Now' button.
+4. That's it! There's no setup required, the plugin does the rest.
 
-1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
+Now watch your traffic grow.
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= What does this plugin do for my website? =
 
-An answer to that question.
+When search engines review your website by crawling through the content, those same search engines are actually reading the raw HTML source. Near the top of any WordPress website you will find a couple HTML meta tags, however, these are not opengraph meta tags. To properly rank any web page, the search engines require opengraph meta tags to properly index the web page in their search engines. By default, WordPress does not provide any opengraph HTML meta tags.
 
-= What about foo bar? =
+= How do I see if it's working? =
 
-Answer to foo bar dilemma.
+After installing and activating the 'code-meta' plugin, visit one of your pages or posts, then right click any blank area on your page and select 'View Page Source'. This will show you the raw HTML code for that web page. Near the top you will see the HTML meta tags. Here's a partial example from our home page:
+
+    <!-- This site is optimized by CodeMilitant SEO OpenGraph Meta Tag Generator - http://codemilitant.com/ -->
+    <meta name="description" content="Your success is the reward! I've been coding since 1983, starting with a Commodore 64, and most of my time coding has been spent building complex scripts that most could not. The many products you buy for your computer, or website, or phone, are all built with one ubiquitous framework: complexity. Buy"/>
+    <meta property="og:title" content="CodeMilitant Linux Nginx Python PHP MySQL HTML CSS JS WordPress"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://codemilitant.com/"/>
+    <meta property="og:description" content="Your success is the reward! I&#8217;ve been coding since 1983, starting with a Commodore 64, and most of my time coding has been spent building complex scripts that most could not. The many products you buy for your computer, or website, or phone, are all built with one ubiquitous framework: complexity. Buy"/>
+    <meta property="og:determiner" content="the"/>
+
+Please see the screen shot below.
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
+1. This screen shot shows an example of the raw HTML meta tags from the codemilitant website.
+
+description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
 the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
 directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
 (or jpg, jpeg, gif).

@@ -11,11 +11,12 @@ function __autoloader($class) {
 	$class = str_replace($namespace, '', $class);
 	$class = str_replace('\\', DIRECTORY_SEPARATOR, $class) . '.php';
 
-	$directory = "/usr/share/nginx/html/wp-content/plugins/code-meta/includes";
-
-	$path = $directory . DIRECTORY_SEPARATOR . 'src' . $class;
+	$directory = dirname(__DIR__);
+	$path = $directory . strtolower($class);
 
 	if (file_exists($path)) {
-		require_once($path);
+		require $path;
+		return true;
 	}
+	return false;
 }
